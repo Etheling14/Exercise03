@@ -8,14 +8,12 @@ do
     Console.WriteLine($"Enter another number");
     b = (int)Convert.ToUInt32(Console.ReadLine());
 
-    // if (a % b == 0|| b % a == 0) 
     if (a % b == 0)
     {
-        Console.WriteLine($"The number a: {a} is multiple of number b: {b}");
+        Console.WriteLine($"The number a: {b:N0} is multiple of number b: {a:N0}");
     }
-
     else
     {
-        Console.WriteLine($"the number a: {a} is not multiple of number b: {b}");
+        Console.WriteLine($"The number a: {b:N0} isn't multiple of number b: {a:N0}");
     }
-}while (true);  
+} while (true);  
